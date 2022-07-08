@@ -25,7 +25,31 @@ const Add = ({ setClose }) => {
     setExtraOptions((prev) => [...prev, extra]);
   };
 
-  const handleCreate = async () => {};
+  const handleCreate = async () => {
+    const data = new FormData();
+    data.append("file", file);
+    data.append("upload_preset", "uploads");
+    try {
+      const uploadRes = await axios.post(
+        "https://api.cloudinary.com/v1_1/dmlxiwz7y/image/upload",
+        data
+      );
+
+      const { url } = uploadRes.data;
+      const newProduct = {
+        title,
+        desc,
+        prices,
+        extraOptions,
+        img: url,
+      };
+
+      await axios.post("http://localhost:3000/api/products", newProduct);
+      setClose(true);
+    } catch (err) {
+      console.log(err);
+    }
+  };
 
   return (
     <div className={styles.container}>
