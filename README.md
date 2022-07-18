@@ -3,6 +3,7 @@
 - ***You can place an order as a customer and check the order status. There are two different payment methods. Payment by cash or Paypal.***
 - ***İf you want to create new products and view orders. You must log in as an admin.***
 - ***If you are logged in as an admin, you can see the "Add New Pizza" button.***
+- ***[`Cloudinary`](https://cloudinary.com/) was used to store images in the cloud.***
 - ***[`Redux`](https://redux.js.org/) used for state management.***
 
 
