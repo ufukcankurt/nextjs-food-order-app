@@ -1,8 +1,69 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# MERN Food Order App  🍕 🍽
 
-## Getting Started
+- ***You can place an order as a customer and check the order status. There are two different payment methods. Payment by cash or Paypal.***
+- ***İf you want to create new products and view orders. You must log in as an admin.***
+- ***If you are logged in as an admin, you can see the "Add New Pizza" button.***
+- ***[`Redux`](https://redux.js.org/) used for state management.***
 
-First, run the development server:
+
+## Built With 🛠
+<ul>
+<li>
+<a target="_blank" href="https://nextjs.org/">Next.js</a>
+</li>
+<li>
+<a target="_blank" href="https://www.mongodb.com/atlas/database">MongoDB</a>
+</li>     
+<li>
+<a target="_blank" href="https://expressjs.com/">Express.js</a>
+</li>   
+<li>
+<a target="_blank" href="https://nodejs.org/en/docs/">Node.js</a>
+</li>    
+<li>
+<a target="_blank" href="https://developer.paypal.com/">Paypal Payment</a>
+</li>  
+<li>
+<a target="_blank" href="https://cloudinary.com/">Cloudinary</a>
+</li>  
+</ul>
+
+
+
+## Installation ⚡
+
+<ul>
+
+<li>
+<p>Clone the repo</p>
+<pre>
+<code>git clone git@github.com:ufukcankurt/nextjs-food-order-app.git</code>
+</pre>
+</li>
+<li>
+<p>İnstall all dependencies</p>
+<pre>
+<code> yarn ||  yarn install </code>
+</pre>
+</li>
+<li>
+Create .env file at the top of the application and add these parameters
+<pre>
+<code> MONGO_URL=</code>
+<code> ADMIN_USERNAME=</code>
+<code> ADMIN_PASSWORD=</code>
+<code> TOKEN=</code>
+</pre>
+To get MONGO_URL, you must first create a collection in 
+<a target="_blank" href="https://www.mongodb.com/atlas/database">MongoDB Atlas</a>. <br> You can create manually the followings: ADMIN_USERNAME - ADMIN_PASSWORD - TOKEN
+
+
+
+</li>
+
+<li>
+<p>Run the development server:</p>
+
 
 ```bash
 npm run dev
@@ -10,25 +71,37 @@ npm run dev
 yarn dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+</li>
+</ul>
 
-You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
+## Screenshots 📸
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.js`.
+<p align="center" style="padding: 10px">
+<img alt="" src="./public/screenshoots/ss_1.png" width="90%">
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
+<p align="center" style="padding: 10px">
+<img alt="" src="./public/screenshoots/ss_2.png" width="90%">
 
-## Learn More
+<p align="center" style="padding: 10px">
+<img alt="" src="./public/screenshoots/ss_3.png" width="90%">
 
-To learn more about Next.js, take a look at the following resources:
+<p align="center" style="padding: 10px">
+<img alt="" src="./public/screenshoots/ss_4.png" width="90%">
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+<p align="center" style="padding: 10px">
+<img alt="" src="./public/screenshoots/ss_5.png" width="90%">
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+<p align="center" style="padding: 10px">
+<img alt="" src="./public/screenshoots/ss_6.png" width="90%">
 
-## Deploy on Vercel
+> ***The following is for admin only.***
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+<p align="center" style="padding: 10px">
+<img alt="" src="./public/screenshoots/ss_8.png" width="90%">
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+<p align="center" style="padding: 10px">
+<img alt="" src="./public/screenshoots/ss_7.png" width="90%">
+
+
+
+
